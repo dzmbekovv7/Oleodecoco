@@ -1,4 +1,3 @@
-import { useLocation, Link } from 'react-router';
 import { Container } from './container';
 import { useState } from 'react';
 
@@ -11,7 +10,6 @@ const LINKS = [
 ];
 
 export function Header() {
-  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -19,25 +17,25 @@ export function Header() {
       <Container>
         <div className="flex items-center justify-between py-5">
           {/* Left: Logo */}
-          <Link to="/" className="flex flex-col items-center">
+          <a href="/" className="flex flex-col items-center">
             <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">
               Oleodecoco
             </h1>
             <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
               Natural & Pure
             </span>
-          </Link>
+          </a>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex gap-6 items-center">
             {LINKS.map((item) => (
-              <Link
+              <a
                 key={item.label}
-                to={item.href}
+                href={item.href}
                 className={`text-xl font-semibold text-gray-700 hover:text-black transition`}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
 
@@ -68,14 +66,14 @@ export function Header() {
         <div className="md:hidden bg-white border-t shadow-sm">
           <nav className="flex flex-col px-6 py-4 gap-4">
             {LINKS.map((item) => (
-              <Link
+              <a
                 key={item.label}
-                to={item.href}
+                href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-medium text-gray-700 hover:text-black transition"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>

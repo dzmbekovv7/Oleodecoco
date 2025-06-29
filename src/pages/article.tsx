@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import {
   ArticleComments,
   ArticleContent,
   ArticleFeatured,
-  ArticleHeader,
   ArticleLatest,
   ArticleNavigation,
   ArticlePopular,
