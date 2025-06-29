@@ -73,22 +73,22 @@ export function AboutPage() {
               {
                 name: 'Max Johnson',
                 role: 'Strength Coach',
-                img: 'https://randomuser.me/api/portraits/men/32.jpg',
+                img: 'https://www.ourwatch.org.au/_next/image?url=https%3A%2F%2Fassets.ourwatch.org.au%2Fassets%2FMen-in-focus-resources%2F_800x640_crop_center-center_90_none%2FMiF-Mack.jpg&w=3840&q=90',
               },
               {
                 name: 'Emily Park',
                 role: 'Yoga Instructor',
-                img: 'https://randomuser.me/api/portraits/women/45.jpg',
+                img: 'https://img.freepik.com/free-photo/woman-doing-close-up-photoshoot-studio_53876-14476.jpg?semt=ais_hybrid&w=740',
               },
               {
                 name: 'Carlos Rivera',
                 role: 'Cardio Trainer',
-                img: 'https://randomuser.me/api/portraits/men/65.jpg',
+                img: 'https://www.byrdie.com/thmb/vPnxcxE3aXQo_2SpVzlksa7vZmY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/382273864_695179078823092_5394277896313770987_n1-38d6e99842b44d1e8335fd8a3455b26c.jpg',
               },
               {
                 name: 'Sophie Lee',
                 role: 'Nutritionist',
-                img: 'https://randomuser.me/api/portraits/women/68.jpg',
+                img: 'https://media.heragenda.com/brand-img/10702/0x0/wp-content/uploads/2019/12/woman-wearing-gray-notch-lapel-suit-jacket-2381069.jpg',
               },
             ].map(({ name, role, img }, i) => (
               <div
